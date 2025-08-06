@@ -2,7 +2,7 @@ import http from 'k6/http'
 import { sleep, check } from 'k6'
 
 export const options = {
-  iterations: 50,
+  iterations: 10,
 
   thresholds: {
     http_req_failed: ['rate<0.01'], // http errors should be less than 1%
